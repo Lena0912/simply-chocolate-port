@@ -36,24 +36,15 @@
     pointer-events: none;
 }
 
-.modal-backgraund-img {
+/* .modal-backgraund-img {
     overflow: hidden;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-.modal-backgraund-wrapper {
-    width: 100%;
-    border-radius: 15px 15px 0 0;
-    overflow: hidden;
-}
-@media only screen and (min-width: 768px) {
-.modal-backgraund-img{
-    width: 100%;
-    height: 196px;
-    overflow: hidden;
-  }
-}
+    
+} */
+
+
 
 .modal-submit-btn {
     display: block;
@@ -181,7 +172,7 @@
         letter-spacing: -0.03em;
     }
 }
-==
+
 .backdrop-subscribe {
   position: fixed;
   top: 0;
@@ -201,7 +192,7 @@
   pointer-events: none;
 }
 
-.modal-sumscribe {
+.modal-subscribe {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -323,3 +314,65 @@
 .backdrop:hover {
   opacity: 1;
 }
+/* Фонове для модалки */
+.modal-backgraund-wrapper {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+}
+
+.modal-backgraund-img {
+  background-image: url(../img/subscribe-modal/modal-sub_mob@1.webp);
+  background-size: cover;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx) {
+  .modal-backgraund-img {
+    background-image: url(../img/subscribe-modal/modal-sub_mob@2x.webp);
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .modal-backgraund-img {
+    background-image: url(../img/subscribe-modal/subscribe-modal-mob@1x.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-backgraund-img {
+    background-image: url(../img/subscribe-modal/modal-sub_tablet@1x.webp);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .modal-backgraund-img {
+    background-image: url(../img/subscribe-modal/modal-sub_desk@1x.webp);
+  }
+}
+
+@media only screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-width: 320px) and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-width: 320px) and (min-resolution: 1.5dppx) {
+  .modal-backgraund-img {
+    background-image: url(../img/subscribe-modal/subscribe-modal-mob@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .modal-backgraund-img {
+    background-image: url(../img/subscribe-modal/subscribe-modal-tab@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-width: 1200px) and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .modal-backgraund-img {
+    background-image: url(../img/subscribe-modal/subscribe-modal-desc@2x.jpg);
+  }
+}
+
